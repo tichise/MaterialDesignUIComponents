@@ -1,3 +1,5 @@
+![Github Actions workflow](https://github.com/tichise/MaterialDesignUIComponents/actions/workflows/Swift/badge.svg)
+
 # MaterialDesignUIComponents
 
 UI components library for Swift. Currently supports MaterialDesign.
