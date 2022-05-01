@@ -19,12 +19,12 @@ struct ButtonStyleOval_Previews: PreviewProvider {
 <img width="96" alt="image" src="https://user-images.githubusercontent.com/43707/166129864-5889abcb-b5a5-474f-9635-bb4da58826a6.png">
 
 
-Outlined
+ButtonStyleOutlined
 ```
-struct Outlined_Previews: PreviewProvider {
+struct ButtonStyleOutlined_Previews: PreviewProvider {
     static var previews: some View {
         Button("Button") {
-        }.buttonStyle(Outlined(strokeColor: .black))
+        }.buttonStyle(ButtonStyleOutlined(strokeColor: .black))
     }
 }
 ```
