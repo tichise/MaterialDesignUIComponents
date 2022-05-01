@@ -19,8 +19,7 @@ struct ButtonStyleContained_Previews: PreviewProvider {
 }
 ```
 
-<img width="96" alt="image" src="https://user-images.githubusercontent.com/43707/166129864-5889abcb-b5a5-474f-9635-bb4da58826a6.png">
-
+<img width="120" alt="image" src="https://user-images.githubusercontent.com/43707/166133255-953a21a0-bc19-4fa0-91be-9fcfdfc5cbc7.png">
 
 ButtonStyleOutlined
 ```
