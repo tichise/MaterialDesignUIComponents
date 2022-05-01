@@ -1,4 +1,5 @@
-![Github Actions workflow](https://github.com/tichise/MaterialDesignUIComponents/actions/workflows/Swift/badge.svg)
+[![Github Actions workflow](https://github.com/tichise/MaterialDesignUIComponents/actions/workflows/swift.yml/badge.svg)](https://github.com/tichise/MaterialDesignUIComponents/actions/workflows/swift.yml)
+
 
 # MaterialDesignUIComponents
 
