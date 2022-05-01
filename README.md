@@ -1,6 +1,6 @@
 # MaterialDesignUIComponents
 
-UI Components library for Swift. Currently supports MaterialDesign.
+UI components library for Swift. Currently supports MaterialDesign.
 
 ## Sample
 
