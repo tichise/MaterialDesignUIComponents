@@ -67,6 +67,7 @@ public struct ButtonStyleOutlined: ButtonStyle {
     }
 }
 
+@available(iOS 14, *)
 struct ButtonStyleOutlined_Previews: PreviewProvider {
     static var previews: some View {
         Button("Button") {

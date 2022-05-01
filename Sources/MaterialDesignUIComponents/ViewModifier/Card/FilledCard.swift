@@ -25,6 +25,7 @@ public struct FilledCard: ViewModifier {
     }
 }
 
+@available(iOS 14, *)
 struct FilledCard_Previews: PreviewProvider {
     static var previews: some View {
         HStack {

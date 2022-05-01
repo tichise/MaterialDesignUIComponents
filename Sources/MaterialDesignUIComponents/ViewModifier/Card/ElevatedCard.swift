@@ -34,6 +34,7 @@ private struct RoundedRectangleFill: View {
     }
 }
 
+@available(iOS 14, *)
 struct ElevatedCard_Previews: PreviewProvider {
     static var previews: some View {
         HStack {

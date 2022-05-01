@@ -45,6 +45,7 @@ public struct ButtonStyleContained: ButtonStyle {
     }
 }
 
+@available(iOS 14, *)
 struct ButtonStyleContained_Previews: PreviewProvider {
     static var previews: some View {
         Button("Button") {
