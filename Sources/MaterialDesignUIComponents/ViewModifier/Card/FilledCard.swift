@@ -24,3 +24,11 @@ public struct FilledCard: ViewModifier {
             .cornerRadius(cornerRadius)
     }
 }
+
+struct FilledCard_Previews: PreviewProvider {
+    static var previews: some View {
+        HStack {
+            Text("text").padding(10)
+        }.modifier(FilledCard(cornerRadius: 5, backgroundColor: .yellow))
+    }
+}

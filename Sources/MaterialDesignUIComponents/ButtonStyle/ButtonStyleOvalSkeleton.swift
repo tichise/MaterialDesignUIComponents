@@ -3,10 +3,9 @@
 //
 import SwiftUI
 
-
 /// 中が透過になってる丸型のボタンスタイル
 public struct ButtonStyleOvalSkeleton: ButtonStyle {
-    public init(font: Font = .callout, padding: CGFloat = 5, isInfinity: Bool = false, forgroundColor: Color = .black, backgroundColor: Color = .black, strokeColor: Color, cornerRadius: CGFloat = 5) {
+    public init(font: Font = .callout, padding: CGFloat = 5, isInfinity: Bool = false, forgroundColor: Color = .black, backgroundColor: Color = .clear, strokeColor: Color, cornerRadius: CGFloat = 5) {
         self.font = font
         self.padding = padding
         self.isInfinity = isInfinity
@@ -19,7 +18,7 @@ public struct ButtonStyleOvalSkeleton: ButtonStyle {
     var font: Font = .callout
     var strokeColor: Color = .blue
     var forgroundColor: Color = .black
-    var backgroundColor: Color = .black
+    var backgroundColor: Color = .clear
     var padding: CGFloat = 5
     var isInfinity: Bool = false
     var cornerRadius: CGFloat = 10 // 角丸の半径
@@ -38,7 +37,7 @@ public struct ButtonStyleOvalSkeleton: ButtonStyle {
         var cornerRadius: CGFloat = 10 // 角丸の半径
         var strokeColor: Color = .blue
         var forgroundColor: Color = .black
-        var backgroundColor: Color = .black
+        var backgroundColor: Color = .clear
         
         var body: some View {
             configuration.label
@@ -65,5 +64,12 @@ public struct ButtonStyleOvalSkeleton: ButtonStyle {
         var body: some View {
             return RoundedRectangle(cornerRadius: cornerRadius).fill(fillColor)
         }
+    }
+}
+
+struct ButtonStyleOvalSkeleton_Previews: PreviewProvider {
+    static var previews: some View {
+        Button("Button") {
+        }.buttonStyle(ButtonStyleOvalSkeleton(strokeColor: .black))
     }
 }

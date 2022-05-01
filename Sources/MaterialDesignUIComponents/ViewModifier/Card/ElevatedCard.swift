@@ -33,3 +33,11 @@ private struct RoundedRectangleFill: View {
         return RoundedRectangle(cornerRadius: cornerRadius).foregroundColor(.white).shadow(color: shadowColor, radius: 1, x: 1, y: 1)
     }
 }
+
+struct ElevatedCard_Previews: PreviewProvider {
+    static var previews: some View {
+        HStack {
+            Text("text").padding(10)
+        }.modifier(ElevatedCard(cornerRadius: 5, shadowColor: .gray))
+    }
+}

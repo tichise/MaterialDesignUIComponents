@@ -44,3 +44,10 @@ public struct ButtonStyleOval: ButtonStyle {
         }
     }
 }
+
+struct ButtonStyleOval_Previews: PreviewProvider {
+    static var previews: some View {
+        Button("Button") {
+        }.buttonStyle(ButtonStyleOval())
+    }
+}
