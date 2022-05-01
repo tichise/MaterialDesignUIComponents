@@ -61,4 +61,4 @@ struct ElevatedCard_Previews: PreviewProvider {
 }
 ```
 
-<img width="85" alt="image" src="https://user-images.githubusercontent.com/43707/166129889-eccc3c41-4582-4564-9d2a-9c810055b21f.png">
+<img width="120" alt="image" src="https://user-images.githubusercontent.com/43707/166133242-652611b9-8996-4be6-a5c6-3494c73ea925.png">
