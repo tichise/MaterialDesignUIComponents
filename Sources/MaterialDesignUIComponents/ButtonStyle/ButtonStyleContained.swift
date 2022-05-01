@@ -5,10 +5,13 @@ import SwiftUI
 
 /// 中が塗りつぶしになってる丸型のボタンスタイル
 public struct ButtonStyleContained: ButtonStyle {
-    public init(font: Font = .callout, forgroundColor: Color = .white, backgroundColor: Color = .blue, padding: CGFloat = 5, isInfinity: Bool = false) {
+    public init(font: Font = .callout, forgroundColor: Color = .white, backgroundColor: Color = .blue,
+        shadowColor: Color = .gray,
+        padding: CGFloat = 5, isInfinity: Bool = false) {
         self.font = font
         self.forgroundColor = forgroundColor
         self.backgroundColor = backgroundColor
+        self.shadowColor = shadowColor
         self.padding = padding
         self.isInfinity = isInfinity
     }
@@ -16,11 +19,14 @@ public struct ButtonStyleContained: ButtonStyle {
     var font: Font = .callout
     var forgroundColor: Color = .white
     var backgroundColor: Color = .blue
+    var shadowColor: Color = .gray
     var padding: CGFloat = 5
     var isInfinity: Bool = false
     
     public func makeBody(configuration: Configuration) -> some View {
-        ContainedButton(configuration: configuration, font: font, forgroundColor: forgroundColor, backgroundColor: backgroundColor, padding: padding, isInfinity: isInfinity)
+        ContainedButton(configuration: configuration, font: font, forgroundColor: forgroundColor, backgroundColor: backgroundColor,
+            shadowColor: shadowColor,
+            padding: padding, isInfinity: isInfinity)
     }
 
     struct ContainedButton: View {
@@ -30,6 +36,7 @@ public struct ButtonStyleContained: ButtonStyle {
         var font: Font = .callout
         var forgroundColor: Color = .white
         var backgroundColor: Color = .blue
+        var shadowColor: Color
         var padding: CGFloat = 5
         var isInfinity: Bool = false
 
@@ -41,6 +48,7 @@ public struct ButtonStyleContained: ButtonStyle {
                 .font(font)
                 .background(isEnabled ? backgroundColor : backgroundColor.opacity(0.35))
                 .cornerRadius(5)
+                .shadow(color: shadowColor, radius: 1, x: 1, y: 1)
         }
     }
 }
