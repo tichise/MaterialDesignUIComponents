@@ -1,10 +1,10 @@
 //
-//  ButtonStyleOvalSkeleton.swift
+//  ButtonStyleOutlined.swift
 //
 import SwiftUI
 
 /// 中が透過になってる丸型のボタンスタイル
-public struct ButtonStyleOvalSkeleton: ButtonStyle {
+public struct ButtonStyleOutlined: ButtonStyle {
     public init(font: Font = .callout, padding: CGFloat = 5, isInfinity: Bool = false, forgroundColor: Color = .black, backgroundColor: Color = .clear, strokeColor: Color, cornerRadius: CGFloat = 5) {
         self.font = font
         self.padding = padding
@@ -24,12 +24,12 @@ public struct ButtonStyleOvalSkeleton: ButtonStyle {
     var cornerRadius: CGFloat = 10 // 角丸の半径
     
     public func makeBody(configuration: Configuration) -> some View {
-        OvalButtonSkeleton(configuration: configuration, font: font, padding: padding, isInfinity: isInfinity, cornerRadius: cornerRadius, strokeColor: strokeColor, forgroundColor: forgroundColor, backgroundColor: backgroundColor)
+        OutlinedButton(configuration: configuration, font: font, padding: padding, isInfinity: isInfinity, cornerRadius: cornerRadius, strokeColor: strokeColor, forgroundColor: forgroundColor, backgroundColor: backgroundColor)
     }
 
-    struct OvalButtonSkeleton: View {
+    struct OutlinedButton: View {
         @Environment(\.isEnabled) var isEnabled
-        let configuration: ButtonStyleOvalSkeleton.Configuration
+        let configuration: ButtonStyleOutlined.Configuration
         
         var font: Font = .callout
         var padding: CGFloat = 5
@@ -67,9 +67,9 @@ public struct ButtonStyleOvalSkeleton: ButtonStyle {
     }
 }
 
-struct ButtonStyleOvalSkeleton_Previews: PreviewProvider {
+struct ButtonStyleOutlined_Previews: PreviewProvider {
     static var previews: some View {
         Button("Button") {
-        }.buttonStyle(ButtonStyleOvalSkeleton(strokeColor: .black))
+        }.buttonStyle(ButtonStyleOutlined(strokeColor: .black))
     }
 }
