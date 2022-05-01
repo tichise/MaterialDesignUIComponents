@@ -6,12 +6,12 @@ UI components library for Swift. Currently supports MaterialDesign.
 
 ### ButtonStyle
 
-ButtonStyleOval
+ButtonStyleContained
 ```
-struct ButtonStyleOval_Previews: PreviewProvider {
+struct ButtonStyleContained_Previews: PreviewProvider {
     static var previews: some View {
         Button("Button") {
-        }.buttonStyle(ButtonStyleOval())
+        }.buttonStyle(ButtonStyleContained())
     }
 }
 ```
